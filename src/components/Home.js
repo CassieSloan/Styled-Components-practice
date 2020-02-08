@@ -6,8 +6,23 @@ const Title = styled.h1`
     color: palevioletred;
 `
 const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
+    padding: 4em;
+    background: papayawhip;
+`;
+
+const Button = styled.button`
+background: ${ props => props.primary ? "pink" : "blue" };
+color: ${props => props.primary ? "black" : "white" };
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border-radius: 3px;
+`
+
+const InheritButton = styled(Button)`
+  color: white;
+  border-color: tomato;
+  background: tomato;
 `;
 
 class Home extends React.Component {
@@ -18,11 +33,13 @@ class Home extends React.Component {
                 <Title>
                     Hello
                 </Title>
+                <Button primary>Primary props</Button>
+                <Button>no props</Button>
+                <InheritButton>inherit button</InheritButton>
             </Wrapper>
             </>
         )
     }
-    
 }
 
 export default Home; 
