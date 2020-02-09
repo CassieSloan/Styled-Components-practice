@@ -1,14 +1,13 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Home from "./components/Home";
-import styled from "styled-components";
+import Inputs from "./components/Inputs";
 
 
 function App() {
   render() 
     return(
       <>
-      <Home/>
+        <Inputs></Inputs>
       </>
     );
 }

@@ -25,7 +25,7 @@ const InheritButton = styled(Button)`
   background: tomato;
 `;
 
-class Home extends React.Component {
+class styledComponentsPlay extends React.Component {
     render() {
         return(
             <>
@@ -42,4 +42,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home; 
+export default styledComponentsPlay; 
